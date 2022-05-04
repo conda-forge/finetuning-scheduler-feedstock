@@ -29,7 +29,7 @@ final phase of the schedule has its stopping criteria met.
 Documentation
 -------------
 - https://finetuning-scheduler.readthedocs.io/en/stable/
-- https://finetuning-scheduler.readthedocs.io/en/0.1.2/
+- https://finetuning-scheduler.readthedocs.io/en/0.1.3/
 
 
 Current build status
