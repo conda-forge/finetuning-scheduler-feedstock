@@ -1,5 +1,5 @@
 {% set name = "finetuning-scheduler" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/finetuning-scheduler-{{ version }}.tar.gz
-  sha256: e58ab7c85d4f5ea73f94185b8d6647bdfebe51c71719a8f5515f00764bd7b66d
+  sha256: 52f34db1a2bc2c99e3a0067c1eb90525948f80b45e777a48d6a7b45e6b776908
 
 build:
   number: 0
@@ -56,7 +56,7 @@ about:
     Documentation
     -------------
     - https://finetuning-scheduler.readthedocs.io/en/stable/
-    - https://finetuning-scheduler.readthedocs.io/en/0.1.3/
+    - https://finetuning-scheduler.readthedocs.io/en/0.1.4/
 
 extra:
   recipe-maintainers:
