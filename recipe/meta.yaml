@@ -1,5 +1,5 @@
 {% set name = "finetuning-scheduler" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/finetuning-scheduler-{{ version }}.tar.gz
-  sha256: 0d7deea62057588448ce5b77830e1559703fed541d9ef6c378eb2d679636a0a2
+  sha256: 886f73add031f8fa24532a2c30278c5f867e8baa473b8015d6027bb10b3064e4
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
     - python >=3.7
   run:
     - python >=3.7
-    - pytorch-lightning >=1.6.0, <=1.6.4
+    - pytorch-lightning >=1.6.0, <=1.6.5
     - pytorch >=1.8
     - protobuf >=3.9.2, <3.20
 
@@ -32,23 +32,23 @@ test:
 
 about:
   home: https://github.com/speediedan/finetuning-scheduler
-  summary: A PyTorch Lightning extension that enhances model experimentation with flexible finetuning schedules.
+  summary: A PyTorch Lightning extension that enhances model experimentation with flexible fine-tuning schedules.
   license: Apache-2.0
   license_file: LICENSE
   description: |
-    The FinetuningScheduler callback accelerates and enhances foundational model experimentation with flexible finetuning
+    The FinetuningScheduler callback accelerates and enhances foundational model experimentation with flexible fine-tuning
     schedules. Training with the FinetuningScheduler callback is simple and confers a host of benefits:
 
-    - it dramatically increases finetuning flexibility
+    - it dramatically increases fine-tuning flexibility
     - expedites and facilitates exploration of model tuning dynamics
     - enables marginal performance improvements of finetuned models
 
-    Fundamentally, the FinetuningScheduler callback enables multi-phase, scheduled finetuning of foundational models.
+    Fundamentally, the FinetuningScheduler callback enables multi-phase, scheduled fine-tuning of foundational models.
     Gradual unfreezing (i.e. thawing) can help maximize foundational model knowledge retention while allowing (typically
     upper layers of) the model to optimally adapt to new tasks during transfer learning.
 
-    FinetuningScheduler orchestrates the gradual unfreezing of models via a finetuning schedule that is either implicitly
-    generated (the default) or explicitly provided by the user (more computationally efficient). Finetuning phase
+    FinetuningScheduler orchestrates the gradual unfreezing of models via a fine-tuning schedule that is either implicitly
+    generated (the default) or explicitly provided by the user (more computationally efficient). Fine-tuning phase
     transitions are driven by FTSEarlyStopping criteria (a multi-phase extension of EarlyStopping), user-specified epoch
     transitions or a composition of the two (the default mode). A FinetuningScheduler training session completes when the
     final phase of the schedule has its stopping criteria met.
@@ -56,7 +56,7 @@ about:
     Documentation
     -------------
     - https://finetuning-scheduler.readthedocs.io/en/stable/
-    - https://finetuning-scheduler.readthedocs.io/en/0.1.7/
+    - https://finetuning-scheduler.readthedocs.io/en/0.1.8/
 
 extra:
   recipe-maintainers:
