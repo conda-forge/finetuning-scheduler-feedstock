@@ -1,5 +1,5 @@
 {% set name = "finetuning-scheduler" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/finetuning-scheduler-{{ version }}.tar.gz
-  sha256: 46dc8b71a2622eddad843d52ef1125a889aca71fa77d819d131f2993bf850e23
+  sha256: 41bed4e0952be65fde0f7a703732f1d8b52359aef58dd23113397a013cb9b1d8
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
     - python >=3.7
   run:
     - python >=3.7
-    - pytorch-lightning >=1.7.0, <1.7.1
+    - pytorch-lightning >=1.7.0, <=1.7.1
     - pytorch >=1.9
 
 test:
@@ -55,7 +55,7 @@ about:
     Documentation
     -------------
     - https://finetuning-scheduler.readthedocs.io/en/stable/
-    - https://finetuning-scheduler.readthedocs.io/en/0.2.0/
+    - https://finetuning-scheduler.readthedocs.io/en/0.2.1/
 
 extra:
   recipe-maintainers:
