@@ -1,11 +1,11 @@
-About finetuning-scheduler
-==========================
+About finetuning-scheduler-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/finetuning-scheduler-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/speediedan/finetuning-scheduler
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/finetuning-scheduler-feedstock/blob/main/LICENSE.txt)
 
 Summary: A PyTorch Lightning extension that enhances model experimentation with flexible fine-tuning schedules.
 
@@ -29,7 +29,7 @@ final phase of the schedule has its stopping criteria met.
 Documentation
 -------------
 - https://finetuning-scheduler.readthedocs.io/en/stable/
-- https://finetuning-scheduler.readthedocs.io/en/0.2.3/
+- https://finetuning-scheduler.readthedocs.io/en/2.0.0/
 
 
 Current build status
