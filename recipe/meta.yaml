@@ -1,5 +1,5 @@
 {% set name = "finetuning-scheduler" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/finetuning-scheduler-{{ version }}.tar.gz
   url: https://github.com/speediedan/finetuning-scheduler/releases/download/v{{ version }}/finetuning-scheduler-{{ version }}.tar.gz
-  sha256: d7f6a0827a0fde034f4d29aafd73cf1099c67e8fbdf77626a130e61b2275daf2
+  sha256: 6c9e210d40d533a3f13a1dae2ff492d733462a9c17b47f47908449d4f4c7befe
 
 build:
   script_env:
