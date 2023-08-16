@@ -7,8 +7,9 @@ package:
 
 source:
   #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/finetuning-scheduler-{{ version }}.tar.gz
-  url: https://github.com/speediedan/finetuning-scheduler/releases/download/v{{ version }}/finetuning-scheduler-{{ version }}.tar.gz
-  sha256: 1c55bec2f0efab99e3982119b00666ec60768f01a086fb4f120858cd5af3e562
+  url: https://github.com/speediedan/finetuning-scheduler/releases/download/v{{ version }}/finetuning-scheduler-{{ version }}.post0.tar.gz
+  #url: https://github.com/speediedan/finetuning-scheduler/releases/download/v{{ version }}/finetuning-scheduler-{{ version }}.tar.gz
+  sha256: 1d7adfca4b527b36407bf2997fb607891fa9b6082461323bea6714d0728be755
 
 build:
   script_env:
