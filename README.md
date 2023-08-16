@@ -9,6 +9,10 @@ Package license: Apache-2.0
 
 Summary: A PyTorch Lightning extension that enhances model experimentation with flexible fine-tuning schedules.
 
+Development: https://github.com/speediedan/finetuning-scheduler
+
+Documentation: https://finetuning-scheduler.readthedocs.io/en/stable/
+
 The FinetuningScheduler callback accelerates and enhances foundational model experimentation with flexible fine-tuning
 schedules. Training with the FinetuningScheduler callback is simple and confers a host of benefits:
 
