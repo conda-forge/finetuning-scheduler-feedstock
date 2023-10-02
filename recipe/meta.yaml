@@ -1,14 +1,13 @@
 {% set name = "finetuning-scheduler" %}
-{% set version = "0.4.1" %}
+{% set version = "2.0.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/finetuning-scheduler-{{ version }}.tar.gz
   url: https://github.com/speediedan/finetuning-scheduler/releases/download/v{{ version }}/finetuning-scheduler-{{ version }}.tar.gz
-  sha256: 131a514b91de0b03467da3c7144a9b6c7a016d6052f02d80736fc13db44fe8fe
+  sha256: a14c1e60e21b32e0b2cc375e97a18c2923340f45e9663e99fabec0104d821148
 
 build:
   script_env:
@@ -20,11 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7, <3.11 # TODO: this upper bound is because of PyTorch issue with dataclass
+    - python >=3.8, <3.11 # TODO: this upper bound is because of PyTorch issue with dataclass
   run:
-    - python >=3.7, <3.11 # TODO: this upper bound is because of PyTorch issue with dataclass
-    - pytorch-lightning >=1.9.0, <=1.9.4
-    - pytorch >=1.10.0, <2.0.0
+    - python >=3.8, <3.11 # TODO: this upper bound is because of PyTorch issue with dataclass
+    - pytorch-lightning >=2.0.0, <=2.0.9
+    - pytorch >=1.11
 
 test:
   imports:
