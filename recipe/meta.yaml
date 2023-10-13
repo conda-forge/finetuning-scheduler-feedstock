@@ -1,5 +1,5 @@
 {% set name = "finetuning-scheduler" %}
-{% set version = "2.0.9" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/speediedan/finetuning-scheduler/releases/download/v{{ version }}/finetuning-scheduler-{{ version }}.tar.gz
-  sha256: a14c1e60e21b32e0b2cc375e97a18c2923340f45e9663e99fabec0104d821148
+  sha256: 0e24c5f5b21a3e360b6860ba18ed2b027f56774b61dfa3ee2c4f0561bbf0b331
 
 build:
   script_env:
