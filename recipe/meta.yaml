@@ -1,5 +1,5 @@
 {% set name = "finetuning-scheduler" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/speediedan/finetuning-scheduler/releases/download/v{{ version }}/finetuning-scheduler-{{ version }}.tar.gz
-  sha256: ca02019773803cf4db7922731cdc76f13b5c6893f0f272a556120dd58a3a0431
+  sha256: 3ecd1c90253d804a11afcad64a9ca8b101701affed6bfccd3e0ff29db0fd9773
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - wheel
   run:
     - python >=3.8
-    - lightning >=2.2.0, <2.2.1
+    - lightning >=2.2.0, <2.2.2
     - pytorch >=1.13.0
 
 test:
