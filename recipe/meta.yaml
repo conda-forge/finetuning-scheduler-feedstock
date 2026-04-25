@@ -12,16 +12,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - wheel
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - lightning >=2.3.0, <2.3.4
     - pytorch >=2.0.0
 
@@ -30,6 +30,7 @@ test:
     - finetuning_scheduler
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/speediedan/finetuning-scheduler
